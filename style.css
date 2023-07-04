@@ -1,0 +1,231 @@
+:root {
+  --primary-gradient: linear-gradient(to right, #01e0b7, #02a9f7);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #575656;
+}
+
+.business-solutions {
+  padding: 80px 0;
+}
+
+.business-solutions__text {
+  max-width: 992px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.business-solutions__text-heading {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  background-image: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.business-solutions__text-para {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.business-solutions__text-para:first-of-type {
+  margin-bottom: 60px;
+}
+
+.business-solutions__carousel-container {
+}
+
+.business-solutions__carousel-nav {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.business-solutions__carousel-nav--item {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+}
+
+.business-solutions__carousel-nav--item:first-child {
+  margin-right: 20px;
+}
+
+.business-solutions__carousel-nav--item:last-child {
+  opacity: 0.3;
+}
+
+.business-solutions__carousel-nav--item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 4px;
+  width: 100%;
+  background-image: linear-gradient(to left, #01e0b7, #02a9f7);
+}
+
+.business-solutions__carousel {
+  margin-bottom: 30px;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.business-solutions__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.business-solutions__carousel--card-group {
+  display: flex;
+  gap: 15px;
+}
+
+.business-solutions__carousel--card {
+  min-width: 380px;
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  background-position: center;
+  box-shadow: 0 10px 40px #00000010;
+  border-radius: 24px;
+  padding: 52px 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-solutions__carousel--card-body {
+  width: 300px;
+  max-width: 80%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-solutions__carousel--card-heading {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.business-solutions__carousel--card-heading span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.business-solutions__carousel--card-para {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.business-solutions__carousel .card-btn {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  height: 46px;
+}
+
+.business-solutions__carousel--card-partners {
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 16px;
+}
+
+.business-solutions__carousel--card-partners h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 300px;
+  max-width: 90%;
+  margin: 0 auto 30px;
+}
+
+.business-solutions__carousel--card-partners .partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.business-solutions__carousel--card-partners .partner-logos img {
+  width: 100px;
+  height: 40px;
+}
+
+.business-solutions__carousel-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.business-solutions__carousel-arrows img {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .business-solutions__text {
+    text-align: left;
+  }
+
+  .business-solutions__carousel-nav {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .business-solutions__carousel-nav--item {
+    width: 135px;
+  }
+
+  .business-solutions__carousel {
+    padding-left: 8px;
+  }
+
+  .business-solutions__carousel--card {
+    min-width: 344px;
+  }
+
+  .business-solutions__carousel .card-btn {
+    background-color: #01e0b7;
+    border: none;
+  }
+
+  .business-solutions__carousel--card-partners {
+    padding: 24px 15px;
+  }
+
+  .business-solutions__carousel--card-partners h4 {
+    margin-bottom: 15px;
+  }
+
+  .business-solutions__carousel--card-partners .partner-logos {
+    row-gap: 14px;
+  }
+
+  .business-solutions__carousel--card-partners .partner-logos img:first-child {
+    display: none;
+  }
+}
